@@ -266,7 +266,7 @@ const Home: NextPage = () => {
               <Button
                 disabled={agent === null || agentLifecycle !== "running"}
                 onClick={() => agent?.pauseAgent()}
-                enabledClassName={clsx("bg-yellow-600 hover:bg-yellow-400")}
+                enabledClassName="bg-yellow-600 hover:bg-yellow-400"
               >
                 {agentLifecycle === "pausing" ? (
                   <ImSpinner2 className="animate-spin" />
@@ -277,7 +277,7 @@ const Home: NextPage = () => {
               <Button
                 disabled={agent === null || agentLifecycle == "stopped"}
                 onClick={() => agent?.stopAgent()}
-                enabledClassName={clsx("bg-red-600 hover:bg-red-400")}
+                enabledClassName="bg-red-600 hover:bg-red-400"
               >
                 <FaStop />
               </Button>
